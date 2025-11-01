@@ -6,8 +6,8 @@ TODO
 
 ## If you plan to collaborate with one or two classmates, what are their names?
 
-TODO
+Name: Shalini Joy
 
 ## Do you have any questions of your own?
 
-TODO
+What recommendation do you have for someone who is trying to win Best Project for the class?
