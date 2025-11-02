@@ -12,7 +12,8 @@ Idea 2:
 - Includes: People that are scary for college student coming towards the tower
     like profesors, freshman, dean, politcal canvasers, etc.;
     Each person will have a different defense strength that's inflicted if
-    they reach the tower. To stop them, they must be shot away with pens.
+    they reach the tower. To stop them, they must be shot away with pens (or
+    some other PG gun)
     
 
 
