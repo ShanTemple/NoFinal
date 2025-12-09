@@ -14,7 +14,7 @@ public class GameUI : MonoBehaviour
         SceneManager.LoadScene(currentScene.name);
     }
 
-    // Optional: for a Quit button later
+    // Optional quit button we can use later
     public void QuitGame()
     {
         Application.Quit();

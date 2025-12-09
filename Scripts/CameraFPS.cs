@@ -13,16 +13,16 @@ public class CameraControllerFPS : MonoBehaviour
 
     void Awake()
     {
-        // Create Input Actions instance
+        // Create Input Actions 
         inputActions = new PlayerInputActions();
     }
 
     void OnEnable()
     {
-        // Enable the input action map
+        // Enable input action map
         inputActions.Player.Enable();
 
-        // Subscribe to Look input
+        // Look input
         inputActions.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
         inputActions.Player.Look.canceled += ctx => lookInput = Vector2.zero;
     }
@@ -46,10 +46,10 @@ public class CameraControllerFPS : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        // Vertical rotation (camera)
+        // Vertical rotation for our camera
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
-        // Horizontal rotation (player body)
+        // Horizontal rotation for our player
         transform.parent.Rotate(Vector3.up * mouseX);
     }
 }

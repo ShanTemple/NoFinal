@@ -18,7 +18,7 @@ public class PlayerMovementCC : MonoBehaviour
     private void Awake()
     {
         cc = GetComponent<CharacterController>();
-        inputActions = new PlayerInputActions(); // Make sure this class exists (generated from Input Actions)
+        inputActions = new PlayerInputActions(); 
     }
 
     private void OnEnable()
@@ -54,7 +54,7 @@ public class PlayerMovementCC : MonoBehaviour
     private void ApplyGravity()
     {
         if (cc.isGrounded && velocity.y < 0)
-            velocity.y = -2f; // Small downward force to stick to ground
+            velocity.y = -2f; // Downward force to stick to ground
 
         velocity.y += gravity * Time.deltaTime;
         cc.Move(velocity * Time.deltaTime);

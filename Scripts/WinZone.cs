@@ -8,10 +8,10 @@ public class WinZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if it's the player entering
+        // Check if player is entering
         if (other.CompareTag("Player"))
         {
-            // Show the win panel
+            // Show win panel
             if (winPanel != null)
             {
                 winPanel.SetActive(true);
@@ -20,7 +20,7 @@ public class WinZone : MonoBehaviour
             // Pause the game so player can read and click
             Time.timeScale = 0f;
 
-            // Unlock & show mouse for clicking button (useful in FPS games)
+            // Unlock & show mouse for clicking button
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 

@@ -4,9 +4,9 @@ using TMPro;
 public class SlidingDoorKey : MonoBehaviour
 {
     [Header("Door Setup")]
-    public Transform door;            // The actual door mesh
-    public Transform openPosition;    // Empty object where the door should slide to
-    public float openSpeed = 3f;      // How fast the door moves
+    public Transform door;            // The door mesh
+    public Transform openPosition;    // Empty object where the door slides to
+    public float openSpeed = 3f;      
 
     [Header("Interaction")]
     public KeyCode interactKey = KeyCode.E;
@@ -24,7 +24,7 @@ public class SlidingDoorKey : MonoBehaviour
     {
         if (door != null)
         {
-            // Remember where the door starts = closed position
+            // where the door starts = closed position
             closedPosition = door.position;
             targetPosition = closedPosition;
         }
@@ -32,13 +32,13 @@ public class SlidingDoorKey : MonoBehaviour
         if (promptText != null)
         {
             promptText.text = promptMessage;
-            promptText.enabled = false;   // start hidden
+            promptText.enabled = false;   // starts it hidden
         }
     }
 
     private void Update()
     {
-        // Move the door smoothly toward the target (open or closed)
+        // Moves the door smoothly toward the target (open or closed)
         if (door != null)
         {
             door.position = Vector3.MoveTowards(
@@ -48,7 +48,7 @@ public class SlidingDoorKey : MonoBehaviour
             );
         }
 
-        // Handle E key when player is inside trigger
+        // E key when player is inside trigger
         if (playerInRange && Input.GetKeyDown(interactKey))
         {
             ToggleDoor();
@@ -59,12 +59,12 @@ public class SlidingDoorKey : MonoBehaviour
     {
         if (isOpen)
         {
-            // Go back to the saved closed position
+            // Go back to closed position
             targetPosition = closedPosition;
         }
         else
         {
-            // Go to the open position
+            // Go to open position
             if (openPosition != null)
                 targetPosition = openPosition.position;
         }

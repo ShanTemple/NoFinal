@@ -6,18 +6,18 @@ public class DeathScreen : MonoBehaviour
     [Header("Root UI object to show/hide")]
     public GameObject deathScreenRoot;
 
-    // Call this when the enemy catches the player
+    // Call when the enemy catches the player
     public void Show()
     {
         if (deathScreenRoot != null)
             deathScreenRoot.SetActive(true);
 
-        // Unlock cursor when death screen shows (optional but recommended)
+        // Unlock cursor when death screen shows
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
-    // Option 1: Just hide the screen (not used for restart flow but kept in case)
+    // We can just hide the screen OR
     public void Hide()
     {
         if (deathScreenRoot != null)
@@ -27,13 +27,13 @@ public class DeathScreen : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Option 2: Restart the level
+    // We can restart the level
     public void RestartLevel()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
 
-        // Re-lock cursor for gameplay
+        // Relock cursor for gameplay
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

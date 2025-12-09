@@ -17,7 +17,7 @@ public class HorrorMusicManager : MonoBehaviour
 
     void Awake()
     {
-        // Simple singleton
+        
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);

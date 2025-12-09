@@ -28,7 +28,7 @@ public class RoamingEnemy : MonoBehaviour
     public float stuckPositionThreshold = 0.05f;
     public float stuckTimeThreshold = 2f;
 
-    // NEW: reference to the death screen UI
+    //reference to the death screen UI
     public DeathScreen deathScreen;         // Drag DeathScreenManager here
 
     private NavMeshAgent agent;
@@ -74,7 +74,7 @@ public class RoamingEnemy : MonoBehaviour
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // SIMPLE LOGIC: chase if within range, otherwise wander
+        // chase if within range, otherwise wander
         if (distanceToPlayer <= chaseRange)
         {
             if (!isChasing)
@@ -95,7 +95,7 @@ public class RoamingEnemy : MonoBehaviour
         }
     }
 
-    // ================== WANDERING ==================
+    // The code for WANDERING 
 
     void HandleWandering()
     {
@@ -131,7 +131,7 @@ public class RoamingEnemy : MonoBehaviour
         }
     }
 
-    // ================== CHASING ==================
+    // The code for CHASING 
 
     void HandleChasing(float distanceToPlayer)
     {
@@ -164,16 +164,16 @@ public class RoamingEnemy : MonoBehaviour
     void StopChase()
     {
         isChasing = false;
-        hasWanderTarget = false; // so wander picks a new target next time
+        hasWanderTarget = false; // wander picks a new target next time
 
-        // back to ambient
+        // back to ambient music
         if (HorrorMusicManager.Instance != null)
         {
             HorrorMusicManager.Instance.StopChaseMusic();
         }
     }
 
-    // ================== RESET / RESPAWN ==================
+    // Code for RESET / RESPAWN 
 
     void ResetPlayerAndEnemy()
     {
@@ -199,7 +199,7 @@ public class RoamingEnemy : MonoBehaviour
         // End chase state + music
         StopChase();
 
-        // NEW: show the "You Died" screen AFTER everything else
+        // show the Death screen after everything else
         if (deathScreen != null)
         {
             deathScreen.Show();
@@ -230,7 +230,7 @@ public class RoamingEnemy : MonoBehaviour
         idleTimer = 0f;
     }
 
-    // ================== ANTI-STUCK ==================
+    // Code for ANTI-STUCK
 
     void HandleStuckDetection()
     {
@@ -266,7 +266,7 @@ public class RoamingEnemy : MonoBehaviour
         lastPosition = transform.position;
     }
 
-    // ================== COLLISION BACKUP ==================
+    // Code for COLLISION BACKUP 
 
     void OnCollisionEnter(Collision collision)
     {

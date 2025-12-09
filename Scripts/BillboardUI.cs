@@ -14,9 +14,9 @@ public class BillboardUI : MonoBehaviour
     {
         if (cam == null) return;
 
-        // direction from camera to this object
+        // direction from camera to object
         Vector3 dir = transform.position - cam.position;
-        dir.y = 0f; // keep it upright (don’t tilt up/down)
+        dir.y = 0f; // keeps camera it upright
 
         if (dir.sqrMagnitude > 0.001f)
             transform.rotation = Quaternion.LookRotation(dir);
