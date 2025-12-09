@@ -21,5 +21,5 @@ Given more time, we would have loved to make the enemy look even scarier but we 
 What we learned/enjoyed:
 We learned that like many things in life, programming takes a lot of patience. There were many times where we almost quit and were prepared to send you an email asking you for a new assignment. Our final project is the fourth one because we had to keep starting over. When everything finally started coming together, we were beyond proud of ourselves. Perseverance is key. Teamwork is key. 
 It got us involved with our friends and talking to our family. People were intrigued to know that we were building a game from scratch and wanted to offer their own "cool ideas". We didn't realize that video games can bring people together since most people isolate themselves when playing. We have a feeling that his will be one of the things we talk about throughout our lives. We know that it is not something many new programmers are able to accomplish (or that's what Google said).
-Programming is cool.
+Programming can be fun and cool.
 Building a game from scratch is even cooler.
