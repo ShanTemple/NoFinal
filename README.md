@@ -6,7 +6,7 @@ Project Name: Doom University
 Video URL: https://youtu.be/u-YlIsxMDCU?si=5yXqptbVcaWJT3SD
 
 Note:
-Please excuse the length of our video. Due to the nature of the game (dying and restarting) and the large map we created in an effort to make an actual scary and detailed game, we had to go over time in order to show a general overview.
+Please excuse the length of our video. Due to the nature of the game (dying and restarting) and the large map we created in an effort to make an actual scary and detailed game, we had to go over time in order to show a general overview. Also, the game may be lagging at some places in the video due to zoom also being recorded. It runs smoothly in real life.
 
 Overall:
 Our project idea was very ambitious from the beginning. We knew from the start that we wanted to win best project so we needed some a good idea, some humor, and a lot of time. Given the time constraint, we are proud of our final project! We accomplished our main goals: we designed a haunted house maze that includes a “monster” chasing the player in a scary, school environment where they are confronted by things like no advisor appointments, job applications, and newbie freshamn.
